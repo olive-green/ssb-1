@@ -67,11 +67,7 @@ body{
     font-family:cursive;
     font-size:4rem;
     font-weight:1000;
-    color:white;
-    color:#fa9905;
-    color:white;
-    color:darkgreen;
-}
+  }
 /*Styling of class p1*/
 strong{
     text-decoration: underline;
@@ -364,6 +360,7 @@ main .slider .slide .active {
   }
   main .slider .slide .slider-img {
     padding: 55px;
+    margin-left:67px;
   }
   main .slider .slide .slider-img img {
     width: 400px;
@@ -578,7 +575,12 @@ main .slider .slide .active {
     width:100%;
   }
   .heading1{
-    font-size:2.3rem;
+    font-size:2.7rem;
+    text-align: center;
+  }
+  .sub-text{
+    font-size:1.8rem;
+    text-align: center;
   }
   .blog-container{
     flex-direction:column;
