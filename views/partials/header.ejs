@@ -5,19 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><%= pageTitle %></title>
-  
+
   <!-- You MUST include jQuery before Fomantic -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
   <!-- Font Awesome CDN -->
-   <script src="https://kit.fontawesome.com/efd71d3ed7.js" crossorigin="anonymous"></script>
-   <!--Google Fonts -->
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <!--Custom Stylesheet -->
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href=<%= cssFile %>>
+  <script src="https://kit.fontawesome.com/efd71d3ed7.js" crossorigin="anonymous"></script>
+  <!--Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!--Custom Stylesheet -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href=<%= cssFile %>>
 </head>
 <style>
   .toc.item {
@@ -50,20 +50,25 @@
       display: none;
     }
   }
-  #style1,#style2,#style3{
-    display:flex;
+
+  #style1,
+  #style2,
+  #style3 {
+    display: flex;
     align-items: center;
     justify-content: center;
   }
-  #style2,#style3{
-    display:none;
+
+  #style2,
+  #style3 {
+    display: none;
   }
 </style>
 
 <body>
 
 
-  
+
   <div class="ui tabular menu" id="followingMenu" style="
         margin: 0;
         background-color: white;
@@ -96,7 +101,7 @@
       <a href="/ssbinterview" class="item ui large secondary tertiary button">
         SSB Interview
       </a>
-      <a href="/contribute" class="item ui large secondary tertiary button">
+      <a href="https://fsb-quiz.herokuapp.com/" target="_blank" class="item ui large secondary tertiary button">
         Practice
       </a>
       <div class="i simple dropdown item ui large secondary tertiary button">
@@ -126,10 +131,18 @@
 
   <!-- Sidebar Menu -->
   <div class="ui vertical sidebar menu">
-    <a class="item" href="/">Written Examinations</a>
-    <a class="item" href="/">Resources</a>
-    <a class="item" href="/community">Community</a>
-    <a class="item" href="/contribute">Contribute</a>
+    <a class="item" href="/ssbinterview">SSB Interview</a>
+    <a class="item" href="/interviewTips">Interview Tips</a>
+    <a class="item" href="https://fsb-quiz.herokuapp.com/" target="_blank">Practice</a>
+    <a class="item" href="/blogs">Blogs</a>
+    <h4 style="text-align: center;text-decoration: underline;">Written Examination</h3>
+      <a href="/written/nda" class="item">NDA</a>
+      <a href="/written/cds" class="item">CDS/OTS</a>
+      <a href="/written/afcat" class="item">AFCAT</a>
+      <a href="/written/acc" class="item">ACC</a>
+      <h4 style="text-align: center;text-decoration: underline;">Officier Entries</h3>
+        <a class="item" href="/men">For Men</a>
+        <a href="/women" class="item">For Women</a>
 
   </div>
   <!-- Sidebar menu ends  -->
