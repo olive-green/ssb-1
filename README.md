@@ -20,14 +20,13 @@
 <li style="font-size:1.5rem;color:yellow;">Can write your views on the comment section.</li>
 
 
-<h1 style="margin-top:50px">Tech-:</h1>
+<h1 style="margin-top:50px">Tech-Used:</h1>
 <span>
 <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
 <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 <img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
 <img src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge"/>
-<img src="https://img.shields.io/badge/figma%20-%23FF0000.svg?&style=for-the-badge&logo=figma&logoColor=white"/>
 <img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
 <img src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white"/>
 <img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/> </span>
@@ -38,11 +37,11 @@
   <a href="https://github.com/AMAN123956">
 <img src="https://avatars1.githubusercontent.com/u/56161073?s=60&v=4" style="width:70px;height:100px;border-radius:100%;">
   </a>
-  <a href="https://github.com/me-harshit">
-<img src="" style="width:70px;height:100px;border-radius:100%;margin-left:10px">
+  <a href="https://github.com/olive-green">
+<img src="https://avatars.githubusercontent.com/u/65541151?s=60&v=4"  style="width:50px;height:70px;border-radius:100%;margin-left:20px">
   </a>
-  <a href="https://github.com/heysujal/">
-<img src="" style="width:70px;height:100px;border-radius:100%;margin-left:10px;">
+  <a href="https://github.com/apoorvthedude">
+<img src="https://avatars.githubusercontent.com/u/62026815?s=60&v=4" style="width:50px;height:70px;border-radius:100%;margin-left:20px;">
   </a>
 </span>
 <hr />
@@ -73,13 +72,11 @@ Environment Setup-
 
 * Clone the repository by running command
 ```
-git clone https://github.com/ <your user-name> /threefreespirited/jssconnect.git
+git clone https://github.com/ <your user-name> /AMAN123956/ssb.git
 ```
 in your git bash.
 <br/>
 
-* Run command `cd threefreespirited/heckfree`.
-<br/>
 
 * Run this command to install all dependencies for the project.
 ```
@@ -88,35 +85,21 @@ npm install
 All the current dependencies -
 ```
     "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "express-session": "^1.17.1",
-    "mongoose": "^5.10.3",
-    "mongoose-findorcreate": "^3.0.0",
-    "nodemailer": "^6.4.11",
-    "passport": "^0.4.1",
-    "passport-google-oauth20": "^2.0.0",
-    "passport-local-mongoose": "^6.0.1",
-    "url": "^0.11.0"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
 ```
 <br/>
 
-* Run this command on your terminal/ bash to start the Mongo server on port 27017(default).
-```
-mongod
-```
-<br/>
 
-* Run this command to start the project on local host 3000.
+* Run this command to start the project on local host 5500.
 ```
-npm start
+node app.js
 ```
 <br/>
 
 * Open link to view the website in your browser window if it doesn't open automatically.
 ```
-http://localhost:3000/
+http://localhost:5500/
 ```
 <br/>
 
@@ -125,21 +108,3 @@ http://localhost:3000/
 
 * Now you are all set to use this project.
 
-#### Some useful Mongo DB commands if you are using the terminal instead of the GUI-
-```
-show dbs
-use db <db name>
-show collections
-<db name> .find()
-```
-<h3 style="font-weight:bold;font-size:25px">Note</h3>
-<ul>
-<li> Get connection string from Mongo Atlas by creating a cluster or you can also use your locally installed mongodb. </li>
-<li> You can click here to learn how to connect atlas to you project.</li>
-<li> Create a new file named .env in the Backend folder and copy the format of .env.example file</li>
-<li>Paste the connection string in the .env file in the MONGODB_URI variable.</li>
-<li>Get your client_id and client_secret by creating a new app in google developer console.And enter client_id in CLIENT_ID variable and client_secret in CLIENT_SECRET variable.
-</li>
-
-</ul>
-<h2>No need for google sign in in production mode.</h2>
