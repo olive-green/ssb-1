@@ -1,13 +1,12 @@
 <!-- [Visit our website here](https://jssconnect.herokuapp.com/) -->
 <div align="center">
-<h2 style="text-align:center;font-size:53px;color:red"><span style="color:blue">SSBComrade</span>
+<h2 style="text-align:center;font-size:53px;color:red"><span style="color:blue">SSBComrade🎯🎯</span>
 </div>
 
 <h3 style="text-align:center;color:yellow;font-size:1.8rem;">Be the next one to adore the uniform.</h3>
 <p style="text-align:center;font-size:1.5rem;">SSBComrade is made for defence aspirant who are looking for guidance during their SSB preperation.</p>
 
 <div align="center">
-<!--   <a href="https://vimeo.com/466051937" target="_blank"><img src="/public/images/JssconnectIntro.jpg" alt="Jssconnect Introduction"></a> -->
 </div>
 
 <h1 style="margin-top:40px;">Features</h1>
