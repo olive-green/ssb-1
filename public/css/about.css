@@ -243,7 +243,12 @@ body {
   align-items: center;
   overflow: hidden;
 }
-.wrapper .module-team .team .team-cards .swiper-container {
+@media  screen and (max-width:700px)  {
+  .wrapper .module-team .team .team-cards {
+    flex-direction: column;
+  }
+}
+.wrapper .module-team .team .team-cards .container {
   max-width: 920px;
   height: 360px;
   padding: 0 20px;
@@ -253,6 +258,7 @@ body {
 @media screen and (max-width: 1180px) {
   .wrapper .module-team .team .team-cards .swiper-container {
     max-width: 600px;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 799px) {
@@ -644,4 +650,30 @@ body {
 }
 .wrapper .module-team .team .team-cards .navigation .swiper-button-next:hover {
   transform: translateX(0px);
+}
+
+
+.swiper-wrapper{
+  display:flex !important;
+  align-items: center;
+  justify-content: center;
+  }
+
+@media screen and (max-width:1000px){
+  .swiper-container{
+    height:1000px !important;
+    width:100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-right:100px !important;
+    justify-content:center;
+  }
+  .swiper-wrapper{
+    flex-direction: column !important;
+    
+  }
+  .swiper-slide{
+    margin-top:60px;
+  }
 }

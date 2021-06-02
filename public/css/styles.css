@@ -7,8 +7,6 @@ body{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-   
-    
 }
 
 .header-container{
@@ -31,7 +29,6 @@ body{
     display:flex;
     justify-content: space-between;
   /*  width:100%; */
-    height:500px;
     padding:20px 60px;
     margin-top:25px;
     padding-bottom: 30px;
@@ -566,12 +563,14 @@ main .slider .slide .active {
   .top-container{
     flex-direction: column;
     padding:13px;
+    margin-bottom:10px;
   }
   .top-left-section{
     margin-top:5%;
     width:100%;
   }
   .top-right-section{
+    margin-top:5%;
     width:100%;
   }
   .heading1{
@@ -583,6 +582,7 @@ main .slider .slide .active {
     text-align: center;
   }
   .blog-container{
+    margin-top:0px;
     flex-direction:column;
   }
   .blog-container h2{

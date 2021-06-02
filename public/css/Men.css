@@ -6,6 +6,9 @@
 }
 
 
+.container{
+    display:flex;
+}
 /* css for sidebar */
 .ui.grid {
     margin-top:100px !important;
@@ -15,6 +18,12 @@
 .ui.vertical.tabular.menu .item {
     border-color: #e7f1e7;
     text-align: center;
+}
+.left-content{
+    width:30%;
+}
+.right-content{
+    width:70%;
 }
 .side-bar{
     background-color: #fa9906;
@@ -164,8 +173,9 @@ a{
 /* media queries */
 @media only screen and (max-width:500px){
     .ui.grid{
-        width:100%;
+        width:100% !important;
         margin-bottom: 5px;
+        flex-direction: column !important;
     }
    
     *{
@@ -175,5 +185,15 @@ a{
         padding:19px;
 
     }
-
+    .left-content{
+        width:100%;
+        font-size: 1.5rem;
+    }
+    .right-content{
+        margin-top:10px;
+        width:100%;
+    }
+   .container{
+       flex-direction: column;
+   }
 }
