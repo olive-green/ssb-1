@@ -18,7 +18,7 @@ setInterval(() => {
 /* @desc: Fetching data through api call to backend blog site */
 let length = 0;
 async function getBlog() {
-    const res = await fetch("https://ssb-blogs.herokuapp.com/articles/getBlogs")
+    const res = await fetch("http://localhost:5000/articles/getBlogs")
     const data = await res.json()
     console.log(data)
     length = data.data.length;
