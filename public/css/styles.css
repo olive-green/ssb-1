@@ -23,6 +23,11 @@ body{
   #second{
       display:none;
   }
+  
+  #third{
+      display:none;
+  }
+
 
 /* css of container */
 .top-container{
