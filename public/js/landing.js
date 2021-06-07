@@ -2,6 +2,20 @@ const first = document.getElementById("first");
 const second = document.getElementById("second");
 const third = document.getElementById("third");
 
+/*
+const switchToggle = document.querySelector(".public")
+switchToggle.addEventListener("change", (e) => {
+    if (e.target.value == "false") {
+        e.target.value = "true"
+        featureContainer.style.background = "black";
+        blogContainer.style.background = "black";
+    }
+    else {
+        e.target.value = "false"
+        featureContainer.style.background = "white";
+        blogContainer.style.background = "white";
+    }
+}) */
 // fetching data
 let notifications=[]
 fetch("https://ssbnotifications-864d7-default-rtdb.firebaseio.com/notifications.json")
@@ -45,7 +59,7 @@ fetch("https://ssbnotifications-864d7-default-rtdb.firebaseio.com/notifications.
         second.style.display = "none";
         third.style.display = "block";
         
-    }, 4000)
+    }, 6000)
 
 })
 .catch(err=>{
@@ -60,7 +74,7 @@ fetch("https://ssbnotifications-864d7-default-rtdb.firebaseio.com/notifications.
 /* @desc: Fetching data through api call to backend blog site */
 let length = 0;
 async function getBlog() {
-    const res = await fetch("http://localhost:5000/articles/getBlogs")
+    const res = await fetch("https://ssb-blogs.herokuapp.com/articles/getBlogs")
     const data = await res.json()
     console.log(data)
     length = data.data.length;
@@ -69,17 +83,18 @@ async function getBlog() {
 let card = document.querySelectorAll(".card");
 let cardTitle = document.querySelectorAll(".title");
 const cardDesc = document.querySelectorAll(".copy");
-
+const cardBtn = document.querySelectorAll(".btn")
     for (let i = 0; i < length; i++){
         console.log(data.data[i].title);
         cardTitle[i].innerHTML = data.data[i].title;
         cardDesc[i].innerHTML = data.data[i].Shortdescription;
+        console.log(data.data[i]._id)
+        cardBtn[i].setAttribute("href",`https://ssb-blogs.herokuapp.com/articles/${data.data[i]._id}`)
     }
 }
 
 
 getBlog();
-
 
 
 
