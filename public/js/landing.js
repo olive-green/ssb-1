@@ -17,54 +17,54 @@ switchToggle.addEventListener("change", (e) => {
     }
 }) */
 // fetching data
-let notifications=[]
-fetch("https://ssbnotifications-864d7-default-rtdb.firebaseio.com/notifications.json")
-.then(res =>{
-    return res.json()
-})
-.then(data=>{
-    console.log(data)
-    for(const key in data){
-        notifications.push(data[key]);
-    }
-    let length=notifications.length;
-    console.log(length);
-    // console.log(notifications[0][0])
-    // console.log(notifications)
-    // console.log(notifications[0][2])
+// let notifications=[]
+// fetch("https://ssbnotifications-864d7-default-rtdb.firebaseio.com/notifications.json")
+// .then(res =>{
+//     return res.json()
+// })
+// .then(data=>{
+//     console.log(data)
+//     for(const key in data){
+//         notifications.push(data[key]);
+//     }
+//     let length=notifications.length;
+//     console.log(length);
+//     // console.log(notifications[0][0])
+//     // console.log(notifications)
+//     // console.log(notifications[0][2])
 
 
-    notif1=notifications[length-1][0].notification
-    notif2=notifications[length-1][1].notification
-    notif3=notifications[length-1][2].notification
+//     notif1=notifications[length-1][0].notification
+//     notif2=notifications[length-1][1].notification
+//     notif3=notifications[length-1][2].notification
 
-    first.innerText=notif1;
-    second.innerText=notif2;
-    third.innerText=notif3;
-    setInterval(() => {
-        second.style.display = "block";
-        first.style.display = "none";
-        third.style.display = "none";
+//     first.innerText=notif1;
+//     second.innerText=notif2;
+//     third.innerText=notif3;
+//     setInterval(() => {
+//         second.style.display = "block";
+//         first.style.display = "none";
+//         third.style.display = "none";
     
-    }, 2000)
+//     }, 2000)
     
-    setInterval(() => {
-        first.style.display = "block";
-        second.style.display = "none";
-        third.style.display = "none";
+//     setInterval(() => {
+//         first.style.display = "block";
+//         second.style.display = "none";
+//         third.style.display = "none";
         
-    }, 4000)
-    setInterval(() => {
-        first.style.display = "none";
-        second.style.display = "none";
-        third.style.display = "block";
+//     }, 4000)
+//     setInterval(() => {
+//         first.style.display = "none";
+//         second.style.display = "none";
+//         third.style.display = "block";
         
-    }, 6000)
+//     }, 6000)
 
-})
-.catch(err=>{
-    console.log(err)
-})
+// })
+// .catch(err=>{
+//     console.log(err)
+// })
 
 
 
